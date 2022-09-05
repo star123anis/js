@@ -1,0 +1,112 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_rogowska()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<h1>Uwagi na temat JS</h1>
+<h2>Kiedy powstała JS</h2> 
+Ten wszechobecny dziś język skryptowy został stworzony – początkowo jako LiveScript – na potrzeby firmy Netscape i przeglądarki Navigator. Zamierzeniem jego projektantów było rozszerzenie możliwości języka HTML w taki sposób, aby strony stały się bardziej atrakcyjne pod względem sposobu prezentacji danych oraz możliwości interakcji z użytkownikiem. W 1995 roku, na mocy porozumienia z firmą Sun Microsystems, w zamian za włączenie do przeglądarki Netscape obsługi technologii Java, język otrzymał oficjalną nazwę JavaScript. W grudniu tego samego roku został zaimplementowany w najnowszej wówczas wersji Navigatora i rozpoczął triumfalny pochód przez Sieć.
+<h2>Dlaczego jest to język skryptowy</h2>
+JavaScript jest przede wszystkim językiem skryptowym – to znaczy interpretowanym. Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. Wystarczy nam do tego przeglądarka internetowa, która ten język obsługuje – czyli w zasadzie każda z liczących się na rynku aplikacji. Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.
+<h2>Gdzie jest wykonywany JS</h2>
+<h3>Skrypt JavaScript można umieścić w czterech różnych miejscach:</h3>
+<h4>W treści strony</h4>
+<textarea cols="30" rows="30">
+<body>
+<script type="text/javascript">
+<!--
+alert("Hello World!");
+//-->
+</script>
+</body>
+<body>
+<script type="text/javascript">
+<!--
+alert("Hello World!");
+//-->
+</script>
+</body>
+</textarea>
+<h4>W nagłówku strony wewnątrz znaczników < head ></h4>
+<textarea cols="30" rows="30">
+<head>
+<script type="text/javascript">
+<!--
+alert("Hello World!");
+//-->
+</script>
+</head>
+<head>
+<script type="text/javascript">
+<!--
+alert("Hello World!");
+//-->
+</script>
+</head>
+</textarea>
+<br>
+Skrypty w nagłówku HTML nie wpływają od razu na dokument HTML, lecz mogą się do nich odwoływać inne skrypty. Nagłówek często wykorzystywany jest do umieszczania funkcji – grup instrukcji JavaScriptu, które mogą być użyte jako jedna całość.
+<h4>W znaczniku HTML</h4>
+<textarea cols="30" rows="30">
+<body onLoad="window.alert('Okno komunikatu')">
+1
+<body onLoad="window.alert('Okno komunikatu')">
+160
+</textarea>
+<br>
+Nosi to nazwę funkcji obsługi zdarzenia (ang. event handler) i pozwala na pracę skryptu z elementami HTML. Używając JavaScriptu w funkcjach obsługi zdarzeń, nie musimy używać znacznika < script >.
+<h3>W osobnym pliku</h3>
+<textarea cols="30" rows="30">
+<head>
+<script type="text/javascript" src="plik.js"></script>
+</head>
+<head>
+<script type="text/javascript" src="plik.js"></script>
+</head>
+</textarea>
+<br>
+JavaScript pozwala korzystać z plików o rozszerzeniu .js zawierających skrypty; można je dołączać do dokumentu HTML, wskazując nazwę pliku w atrybucie src.
+<br>
+<h2>Kod źródłowy zagnieżdżony w HTML-u</h2>
+Kod JavaScript musi być zawarty pomiędzy znacznikami HTML < script > i < /script >:
+
+<h2>Dlaczego jest to bezpieczne narzędzie</h2>
+Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.
+<h2>Czy JS to język obiektowy</h2>
+JS to język obiektowy, bo program komputerowy wyrażony jest jako zbiór takich obiektów, komunikujących się pomiędzy sobą w celu wykonywania zadań.
+<br><br>
+<textarea rows="3" cols="110">
+<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
+</textarea>
+<br><br>
+wytłumaczenie:<br>
+type="button" - przycisk<br>
+name - nazwa <br>
+value - napis na przycisku<br>
+WinOpen - otwarcie okna <br>
+<br><br>
+<textarea rows="3" cols="110">
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+</textarea>
+<br><br>
+wytłumaczenie:<br>
+window.open - otwarcie nowego okna<br>
+obraz.html - url do strony<br>
+okienko - nazwa strony<br>
+toolbar - pokazuje lub ukrywa standardowy pasek narzędzi<br>
+directories - pokazuje lub ukrywa przyciski katalogów<br>
+menubar - pokazuje lub ukrywa menu przeglądarki<br>
+height - ustawia wysokość okna<br>
+width - ustawia szerokość okna <br>
+top - ustawia położenie okna względem góry ekranu<br>
+left - ustawia położenie okna względem lewej strony ekranu<br>
+window.close - zamknięcie okna<br>
+<img src="obraz1.gif" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_rogowska()"/>
+</body>
+</html>
