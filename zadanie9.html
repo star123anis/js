@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+			<style>
+			div{
+			color: green; 
+			font-size: 37px;
+			}
+			</style>
+			
+				<script>
+				var liczba1_rog=prompt("podaj dzień miesiąca stycznia=","");
+				var liczba2_rog=prompt("podaj inny dzień miesiąca stycznia=","");
+				var liczba3_rog=prompt("podaj dowolną godzinę=","");
+				var liczba4_rog=prompt("podaj inną dowolna godzinę=","");
+				var roznica_rog;
+				var a_rog=parseFloat(liczba1_rog);
+				var b_rog=parseFloat(liczba2_rog);
+				if(a_rog>b_rog)
+				{
+				roznica_rog=(a_rog-b_rog)*60*60*24;
+				}
+				else
+				{
+				roznica_rog=(b_rog-a_rog)*60*60*24;
+				}
+				roznica_rog-=(liczba3_rog)*60*60;
+				roznica_rog+=(liczba4_rog)*60*60;
+				document.write("<div>ilość sekund = "+ roznica_rog +"sekund<br>");
+				</script>
+	</head>
+	<body>
+
+	</body>
+</html>	
