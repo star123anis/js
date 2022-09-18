@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<script>
+	function okno_zamknij_rogowska()
+    {
+    window.close()
+    }
+    </script>
+	<script>
+	var m_rog=prompt("m=");
+    var x = parseFloat(m_rog);
+    var y;
+	y = (x*(x+1));
+    document.write("m= " +x+ "<br>");
+    document.write("1/" +x+ "=" + "1/" +(x+1)+ "+" + "1/" +y);
+    </script>	
+</head>
+<body><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_rogowska()"/>
+</body>
+</html>

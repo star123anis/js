@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="60" rows="60">
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div{
+color: navy;
+font-size: 55px;
+}
+</style>
+<div>
+	<script>
+	function okno_zamknij_rogowska()
+    {
+    window.close()
+    }
+	</script>
+	<script>
+	var m_rog=prompt("Podaj liczbę A = ");
+    var m2_rog=prompt("Podaj liczbę B = ");
+    var A = parseFloat(m_rog);
+    var B = parseFloat(m2_rog);
+    var z=(A**3);
+    var x=(3*((A**2)*B));
+    var c=(3*(A*(B**2)));
+    var v=(B**3)
+    var q=(z+x+c+v);
+    document.write("Wczytane Liczby:" ,  "A =  " +A+ "    " , "B =  " +B+ "<br>");
+    document.write( "("+B+" + "+B+")^3 = "+A+"^3 "+ " + "+ " 3* "+ " (("+A+")^2) * ("+B+") "+ " + "+ " 3 * ("+A+") * (("+B+")^2) "+ " + "+ " "+B+"^3 = "+(A**3)+" + "+(3*((A**2)*B))+" + "+(3 * (A) * (B**2))+" + "+(B**3)+" = "+((A + B) * (A + B) * (A + B))+ "<br>"  );
+	</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_rogowska()"/>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>
