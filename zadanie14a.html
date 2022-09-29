@@ -1,0 +1,36 @@
+<html>
+<body>
+<div style="color:green;font-size:41px;">
+<script>
+var b_rog=prompt("b=","");
+var b_rog=parseFloat(b_rog);
+
+var c_rog=prompt("c=","");
+var c_rog=parseFloat(c_rog);
+
+var pitagoras;
+var a_rog;
+
+pitagoras=Math.pow(c_rog,2)-Math.pow(b_rog,2);
+a_rog=Math.sqrt(pitagoras,2);
+
+var sin_α;
+var sin_α=parseFloat(sin_α);
+sin_α=a_rog/c_rog;
+
+var cos_α;
+var cos_α=parseFloat(cos_α);
+cos_α=b_rog/c_rog;
+
+var tgα;
+var tgα=parseFloat(tgα);
+tgα=a_rog/b_rog;
+
+var ctgα;
+var ctgα=parseFloat(ctgα);
+ctgα=b_rog/a_rog;
+document.write("sin α="+sin_α.toFixed(2)+"<br>cos α="+cos_α.toFixed(2)+"<br>tgα="+tgα.toFixed(2)+"<br>ctgα="+ctgα.toFixed(2)+"<br>");
+ </script>
+ </div>
+</body>
+</html> 
