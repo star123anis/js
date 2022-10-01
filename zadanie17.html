@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> Użycie fukcji </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=","")); 
+                var b=parseFloat(prompt("b=","")); 
+ 
+                function suma_rog(a, b)
+                { 
+                    return a + b; 
+                }
+                function  odejmowanie_rog(a, b)
+                {
+                    return a - b;
+                }
+                function mnożenie_rog(a, b)
+                {
+                    return a * b;
+                }
+                function do_kwadratu_rog(a, b)
+                {
+                    return (a*a)
+                }
+                function do_kwadratu2_rog(a, b)
+                {
+                    return (b*b)
+                }
+				function reszta_z_dzielenia_a_przez_b_rog(a, b)
+                {
+                    return (a%b);
+                }
+ 
+document.write("Wynik dodawania= "+suma_rog(a, b)+"<br>"); 
+document.write("Wynik odejmowania= "+odejmowanie_rog(a, b)+"<br>");
+document.write("Wynik mnożenia= "+mnożenie_rog(a, b)+"<br>");
+document.write("Wynik podniesienia do kwadratu:   a = "+do_kwadratu_rog(a, b)+"    b = "+do_kwadratu2_rog(a, b)+"<br>");
+document.write("Wynik reszty z dzielenia ="+reszta_z_dzielenia_a_przez_b_rog(a, b)+"<br>")
+</script>
+</div>
+</body>
+</html>
