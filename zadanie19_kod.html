@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="50" rows="50">
+<html>
+<head>
+<title>Zadanie 19</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function pole_rogowska(a_rog,b_rog)
+{
+ a_rog=parseFloat(a_rog);
+ b_rog=parseFloat(b_rog);
+ pole_wynik_rog=a_rog*b_rog;
+ document.getElementsByName('pole')[0].value=pole_wynik_rog.toFixed(2);
+ alert("Pc="+pole_wynik_rog.toFixed(2)+" cm^2");
+ wprowadz_pole_rog.innerHTML="Pc="+pole_wynik_rog.toFixed(2)+" cm^2"+"<br>";
+}
+function obwod_rog(a_rog,b_rog)
+{
+ a_rog=parseFloat(a_rog);
+ b_rog=parseFloat(b_rog);
+ obwod_rog=2*a_rog+2*b_rog;
+ document.getElementsByName('obw')[0].value=obwod_rog.toFixed(2);
+ alert("Obwod="+obwod_rog.toFixed(2)+" cm");
+ wprowadz_obw_rog.innerHTML="Obwód="+obwod_rog.toFixed(2)+" cm";
+}
+function okno_zamknij_rogowska_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie pola oraz obwodu prostokąta
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="pole_rogowska(this.a_dana_rog.value,this.b_dana_rog.value);
+obwod_rog(this.a_dana_rog.value,this.b_dana_rog.value);return false">
+Podaj a=
+<input size="6" name="a_dana_rog">
+Podaj b=
+<input size="6" name="b_dana_rog">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="pole">
+Obwód=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="wprowadz_pole_rog"></tr>
+<tr id="wprowadz_obw_rog"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_rogowska_kod()"/>
+</table>
+</body>
+</html>
+</textarea>
+</body>
+</html>

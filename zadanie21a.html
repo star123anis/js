@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+var cc_rog=prompt("podaj przeciwprostokatna c");
+var bb_rog=prompt("podaj bok b");
+var c_rog=parseFloat(cc_rog);
+var b_rog=parseFloat(bb_rog);
+
+var a_rog=Math.sqrt(c_rog*c_rog-b_rog*b_rog).toFixed(3);
+
+var pole_rog=(a_rog*b_rog/2).toFixed(3);
+
+var h3_rog=(a_rog*b_rog/c_rog).toFixed(3);
+
+var sinalfa_rog=(a_rog/c_rog).toFixed(3);
+var cosalfa_rog=(b_rog/c_rog).toFixed(3);
+var tgalfa_rog=(a_rog/b_rog).toFixed(3);
+var ctgalfa_rog=(b_rog/a_rog).toFixed(3);
+
+var alfa_rog=(Math.sin(a_rog/c_rog)*180/Math.PI).toFixed(3);
+var beta_rog=(90-alfa_rog).toFixed(3);
+
+document.write("bok a = "+a_rog+"<br>");
+document.write("pole = "+pole_rog+"<br>");
+document.write("h1 = "+a_rog+"<br>");
+document.write("h2 = "+b_rog+"<br>");
+document.write("h3 = "+h3_rog+"<br>");
+document.write("sin alfa = "+sinalfa_rog+" <br>");
+document.write("cos alfa = "+cosalfa_rog+" <br>");
+document.write("tg alfa = "+tgalfa_rog+" <br>");
+document.write("ctg alfa = "+ctgalfa_rog+" <br>");
+document.write("alfa = "+alfa_rog+" <br>");
+document.write("beta = "+beta_rog+" <br>");
+</script>
+
+
+
+<!Zadanie 21a
+Napisac program ktory po wczytaniu przeciwprostokatnej trojkata oraz dowolnego boku obliczy 
+a) trzeci bok
+b) pole
+c) wszystkie wysokosci 
+d) wszytskie funkcje trygonometryczne kata alfa
+e) obliczy katy ostre
+Użyj zmiennych z 3 literami nazwiska, wydruki do 3 miejsc po przecinku Uzyj modułu Math
+Do obliczenia kata uzyj funkcji uzyj 4 literki : asin
+Do przeliczenia radianów na stopnie uzyj 180/PI
+
+alfa=MATH.SINA(A/C)*180/Math.PI
+beta=90-alfa>
+</body>
+</html>

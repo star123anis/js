@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="50" rows="50">
+<html>
+<head>
+<title>Zadanie 21</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function dlugosc_rog(d_rog,x_rog)
+{
+ d_rog=parseFloat(d_rog);
+ x_rog=parseFloat(x_rog);
+ drabina_rog=Math.sqrt(d_rog*d_rog+x_rog*x_rog);
+ document.getElementsByName('drab')[0].value=drabina_rog.toFixed(2);
+ alert("Drabina="+drabina_rog.toFixed(2)+" m");
+ drabina.innerHTML="Drabina="+drabina_rog.toFixed(2)+" m"+"<br>";
+}
+function alfa_rog(d_rog,x_rog)
+{
+ d_rog=parseFloat(d_rog);
+ x_rog=parseFloat(x_rog);
+ radian_rog=Math.atan2(d_rog,x_rog);
+ stopnie_rog=radian_rog*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_rog.toFixed(2);
+ alert("Alfa="+stopnie_rog.toFixed(2)+" stopni");
+ alfa.innerHTML="Alfa="+stopnie_rog.toFixed(2)+" stopni";
+}
+function okno_zamknij_rogowska_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc_rog(this.d_dana_rog.value,this.x_dana_rog.value);
+alfa_rog(this.d_dana_rog.value,this.x_dana_rog.value);return false">
+Podaj d=
+<input size="6" name="d_dana_rog">
+Podaj x=
+<input size="6" name="x_dana_rog">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="drabina"></tr>
+<tr id="alfa"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_rogowska_kod()"/>
+</table>
+</body>
+</html>
+</textarea>
+</body>
+</html>
