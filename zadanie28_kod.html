@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<textarea cols="50" rows="50">
+<html>
+<head>
+<script type="text/javascript">
+function tel(kolor_k,marka_k,wielkosc_k)//początek konstruktora
+{
+this.kolor=kolor_k;
+this.marka=marka_k;
+this.wielkosc=wielkosc_k;
+}//koniec konstruktora
+
+tel.prototype.wypisz = function () //definicja metody
+{
+alert(this.kolor + ' ' + this.marka+ ' ' + this.wielkosc);
+};
+
+var tele1 = new tel("czarny", "samsung", "duzy"); // nowy obiekt tele1
+var tele2 = new tel("niebieski", "nokia", "maly");
+tele1.wypisz(); // uruchomienie metody wypisz() dotyczącej tele 1
+tele2.wypisz();
+document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól tele1
+document.write("telefon pierwszy"+" "+tele1.kolor+" "+tele1.marka+" "+tele1.wielkosc+"<br>");
+document.write("telefon drugi"+" "+tele2.kolor+" "+tele2.marka+" "+tele2.wielkosc+"<br>");
+tele1.waga="200";
+tele2.waga="100";
+tel.telefon_pokaz_rogowska2=function() {alert("waga: " + tele1.waga + "g")}
+tel.telefon_pokaz_rogowska2();
+tel.telefon_pokaz_rogowska3=function() {alert("waga: " + tele2.waga + "g")}
+tel.telefon_pokaz_rogowska3();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe 
+</body>
+</html>
+</textarea>
+</body>
+</html>
