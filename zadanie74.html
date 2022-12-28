@@ -1,0 +1,34 @@
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+
+ var p_rog=prompt("podaj pierwsza liczbe z przedzialu <20,60>","");
+ var d_rog=prompt("podaj druga liczbe z przedzialu <20,60>","");
+
+ var pocz_rog;
+ var tekst_rog="Rogowska Anna";
+ var zwiek_rog;
+ var i;
+ 
+  var a_rog=parseFloat(p_rog);
+  var b_rog=parseFloat(d_rog);
+
+  if(p_rog>60 || d_rog>60 || p_rog<20 || d_rog<20)
+  document.write("zle wartosci");
+ 
+  
+  if(p_rog<d_rog) {
+  for(i=p_rog;i<d_rog;i++){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_rog+"<br></p>")
+}
+}
+  if(d_rog<p_rog) {
+  for(i=p_rog;i>d_rog;i--){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_rog+"<br></p>")
+}
+}
+ </script>
+</div>
+</body>
+</html>
